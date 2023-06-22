@@ -1,4 +1,14 @@
-<p>aluno-list works!</p>
+<div class="container">
+  <p>aluno-list works!</p>
+</div>
+
+<div class="content">
+  <p>aluno-list works!</p>
+</div>
+
+<div class="sidebar">
+  <p>aluno-list works!</p>
+</div>
 
 <div>
   <pre>{{ alunosFilhos | json }}</pre>
@@ -7,6 +17,9 @@
 <ul>
   <!-- for (let aluno of alunos) -->
   <li *ngFor="let aluno of alunosFilhos">
-    {{ aluno }} <button (click)="excluirAluno(aluno)">Excluir</button>
+    {{ aluno }}
+    <button class="button-secondary" (click)="excluirAluno(aluno)">
+      Excluir
+    </button>
   </li>
 </ul>
